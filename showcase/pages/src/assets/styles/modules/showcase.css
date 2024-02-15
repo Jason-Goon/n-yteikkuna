@@ -139,14 +139,14 @@ main {
         height: 18vw; 
         max-width: 80px; 
         max-height: 80px;
-        transform: translateX(-15%);
+        transform: translateX(-50%);
     }
     .circle.small {
         width: 14vw; 
         height: 14vw; 
         max-width: 60px; 
         max-height: 60px;
-        transform: translateX(15%); /* Corrected for slight leftward placement */
+        transform: translateX(30%); /* Corrected for slight leftward placement */
     }
     .circle.xlarge {
         width: 26vw; 
