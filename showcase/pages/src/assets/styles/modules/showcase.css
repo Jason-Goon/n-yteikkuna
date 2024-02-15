@@ -106,32 +106,49 @@ main {
     opacity: 0.9; 
 }
 
+
 @media (max-width: 600px) {
     .interactive-circles {
-        height: auto;
-        padding: 20px 0; /* Adds top and bottom padding for better spacing */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 100%; /* Ensures the container spans the full width */
+        height: auto; /* Allows container height to adjust based on circle placement */
+        padding-bottom: 20px; /* Adds some space at the bottom */
     }
     
     .circle {
-        width: 24vw; /* Slightly reduces size for better fit */
-        height: 24vw;
-        margin: 12px 0; /* Adjusts vertical margin for spacing */
-        /* Optionally, add a max-width to ensure circles don't get too large on wider screens */
-        max-width: 100px;
-        max-height: 100px;
+        width: 25vw; /* Slightly smaller size for smaller screens */
+        height: 25vw;
+        position: relative; /* Keeps positioning relative */
+        margin: 5px auto; /* Adjusts margin for spacing, slightly reduced */
+        transform: scale(1.5);
+        /* Resets any growth transformation; specific grow behavior adjusted below */
+    }
+    
+    /* Adjusts for center alignment with a bit more vertical spacing */
+    .circle.large { 
+        top: 5vh; /* More spaced out */
+        left: 35%;
+      
+    }
+    .circle.medium { 
+        top: 30vh; /* Increases spacing */
+        left: 35%;
+       
+    }
+    .circle.small { 
+        top: 55vh; /* Further increases spacing */
+        left: 35%;
+       
+    }
+    .circle.xlarge { 
+        top: 80vh; /* Maximizes vertical spacing */
+        left: 30%;
+        margin-bottom: 20px; /* Ensures bottom space */
     }
 
-    /* Adjust the scale transformation for the grow effect if necessary */
+    /* Adjusting the grow transformation for smaller screens to prevent overlap */
     .circle.grow { 
-        transform: scale(1.3); /* Keeps the growth consistent */
+        transform: scale(1.3); /* Moderately increases size without causing overlap */
     }
 }
-
 
 
 
