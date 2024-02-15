@@ -109,46 +109,31 @@ main {
 
 @media (max-width: 600px) {
     .interactive-circles {
-        height: auto; /* Allows container height to adjust based on circle placement */
-        padding-bottom: 20px; /* Adds some space at the bottom */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Keeps circles centered */
+        justify-content: space-evenly; /* Evenly distribute space vertically */
+        height: auto;
+        padding: 20px; /* Adds some padding around the container */
+        width: 100%;
     }
     
     .circle {
-        width: 25vw; /* Slightly smaller size for smaller screens */
-        height: 25vw;
-        position: relative; /* Keeps positioning relative */
-        margin: 5px auto; /* Adjusts margin for spacing, slightly reduced */
-        transform: scale(1.5);
-        /* Resets any growth transformation; specific grow behavior adjusted below */
-    }
-    
-    /* Adjusts for center alignment with a bit more vertical spacing */
-    .circle.large { 
-        top: 5vh; /* More spaced out */
-        left: 65%;
-      
-    }
-    .circle.medium { 
-        top: 30vh; /* Increases spacing */
-        left: 70%;
-       
-    }
-    .circle.small { 
-        top: 55vh; /* Further increases spacing */
-        left: 65%;
-       
-    }
-    .circle.xlarge { 
-        top: 80vh; /* Maximizes vertical spacing */
-        left: 65%;
-        margin-bottom: 20px; /* Ensures bottom space */
+        width: 24vw; /* Adjusts size for a better fit on smaller screens */
+        height: 24vw;
+        margin: 12px 0; /* Adjusts vertical spacing */
+        max-width: 90px; /* Sets a maximum size */
+        max-height: 90px;
+        position: relative;
+        left: 5%; /* Slightly offsets circles to the right */
     }
 
-    /* Adjusting the grow transformation for smaller screens to prevent overlap */
+    /* Specific growth transformation adjustments if needed */
     .circle.grow { 
-        transform: scale(1.3); /* Moderately increases size without causing overlap */
+        transform: scale(1.3); /* Adjusts scale for growth effect */
     }
 }
+
 
 
 
