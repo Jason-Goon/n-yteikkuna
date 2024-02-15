@@ -108,7 +108,7 @@ main {
 
 .circle.grow { 
     transform: scale(2); 
-    opacity: 0.9; 
+    opacity: 1; 
 }
 
 
