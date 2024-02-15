@@ -107,47 +107,46 @@ main {
 }
 
 
+
 @media (max-width: 600px) {
     .interactive-circles {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Ensures circles are aligned in the center */
-        justify-content: space-around; /* Evenly distribute space vertically */
+        align-items: center;
+        justify-content: space-around;
         height: auto;
-        padding: 20px 0; /* Adds padding at the top and bottom */
+        padding: 20px 0;
         width: 100%;
     }
     
+    /* Base styles for circles remain unchanged */
     .circle {
-        width: 20vw; /* Dynamic sizing */
+        width: 20vw;
         height: 20vw;
-        max-width: 90px; /* Maximum size limit */
+        max-width: 90px;
         max-height: 90px;
-        margin: 10px 0; /* Spacing between circles */
-        position: relative; /* Allows for precise positioning */
-        /* Moves each circle approximately 15% to the left */
-        transform: translateX(-15%);
+        margin: 10px 0;
+        position: relative;
     }
 
+    /* Individual adjustments for slight leftward alignment */
     .circle.large { 
-        width: 22vw; max-width: 100px; height: 22vw; max-height: 100px; 
+        transform: translateX(-2%); /* Slight leftward adjustment */
     }
     .circle.medium { 
-        width: 18vw; max-width: 80px; height: 18vw; max-height: 80px; 
+        transform: translateX(-4%); /* A bit more leftward */
     }
     .circle.small { 
-        width: 14vw; max-width: 60px; height: 14vw; max-height: 60px; 
+        transform: translateX(-6%); /* Further leftward */
     }
     .circle.xlarge { 
-        width: 26vw; max-width: 120px; height: 26vw; max-height: 120px; 
+        transform: translateX(-8%); /* Maximum leftward for the largest circle */
     }
 
-    /* Ensures the growth effect maintains the new leftward adjustment */
     .circle.grow { 
-        transform: scale(1.5) translateX(-15%);
+        transform: scale(1.5); /* Maintains growth effect */
     }
 }
-
 
 
 
