@@ -161,10 +161,10 @@ main {
         transform: scale(1.8) translateX(-20%);
     }
     .circle.medium.grow {
-        transform: scale(1.8) translateX(-80px);
+        transform: scale(1.8) translateX(-40px);
     }
     .circle.small.grow {
-        transform: scale(1.8) translateX(100px);
+        transform: scale(1.8) translateX(50px);
     }
     .circle.xlarge.grow {
         transform: scale(1.8) translateX(50px);
