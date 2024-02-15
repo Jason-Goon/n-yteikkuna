@@ -111,26 +111,24 @@ main {
     .interactive-circles {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Ensure circles are aligned in the center */
-        justify-content: space-around; /* Distribute circles evenly */
+        align-items: center; /* Ensures circles are aligned in the center */
+        justify-content: space-around; /* Evenly distribute space vertically */
         height: auto;
-        padding: 20px 0; /* Add padding at the top and bottom */
+        padding: 20px 0; /* Adds padding at the top and bottom */
         width: 100%;
     }
-
-    /* Base responsive settings for circles */
+    
     .circle {
         width: 20vw; /* Dynamic sizing */
         height: 20vw;
-        max-width: 90px; /* Limit size for small devices */
+        max-width: 90px; /* Maximum size limit */
         max-height: 90px;
-        margin: 10px 0; /* Ensure adequate spacing between circles */
-        position: relative; /* Keep for slight horizontal adjustments */
-        left: 20px; /* Reset any left positioning */
-        transform: translateX(0%); /* Reset translate for consistent centering */
+        margin: 10px 0; /* Spacing between circles */
+        position: relative; /* Allows for precise positioning */
+        /* Moves each circle approximately 15% to the left */
+        transform: translateX(-15%);
     }
 
-    /* Adjust the size of each circle explicitly */
     .circle.large { 
         width: 22vw; max-width: 100px; height: 22vw; max-height: 100px; 
     }
@@ -144,12 +142,12 @@ main {
         width: 26vw; max-width: 120px; height: 26vw; max-height: 120px; 
     }
 
-    /* Apply a subtle uniform offset to all circles to slightly move them off-center */
-   
-
-    /* Adjust the scale for growth effect */
-    .circle.grow { transform: scale(1.5) translateX(10px); }
+    /* Ensures the growth effect maintains the new leftward adjustment */
+    .circle.grow { 
+        transform: scale(1.5) translateX(-15%);
+    }
 }
+
 
 
 /* Individual adjustments for slight off-center alignment */
