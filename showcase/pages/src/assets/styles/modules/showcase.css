@@ -112,39 +112,52 @@ main {
     .interactive-circles {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+        align-items: center; /* Centers circles */
+        justify-content: space-around; /* Evenly distributes vertically */
         height: auto;
-        padding: 20px 0;
+        padding: 20px 0; /* Adds padding */
         width: 100%;
     }
-    
-    /* Base styles for circles remain unchanged */
+
+    /* Resetting base style for responsive adjustments */
     .circle {
-        width: 20vw;
-        height: 20vw;
-        max-width: 90px;
-        max-height: 90px;
-        margin: 10px 0;
-        position: relative;
+        margin: 10px 0; /* Provides vertical spacing */
+        position: relative; /* Essential for individual positioning */
     }
 
-    /* Individual adjustments for slight leftward alignment */
-    .circle.large { 
-        transform: translateX(-2%); /* Slight leftward adjustment */
+    /* Individual size and subtle leftward adjustments */
+    .circle.large {
+        width: 22vw; 
+        height: 22vw; 
+        max-width: 100px; 
+        max-height: 100px;
+        transform: translateX(-5%); /* Adjusts position slightly to the left */
     }
-    .circle.medium { 
-        transform: translateX(-4%); /* A bit more leftward */
+    .circle.medium {
+        width: 18vw; 
+        height: 18vw; 
+        max-width: 80px; 
+        max-height: 80px;
+        transform: translateX(-5%);
     }
-    .circle.small { 
-        transform: translateX(-6%); /* Further leftward */
+    .circle.small {
+        width: 14vw; 
+        height: 14vw; 
+        max-width: 60px; 
+        max-height: 60px;
+        transform: translateX(-5%);
     }
-    .circle.xlarge { 
-        transform: translateX(-8%); /* Maximum leftward for the largest circle */
+    .circle.xlarge {
+        width: 26vw; 
+        height: 26vw; 
+        max-width: 120px; 
+        max-height: 120px;
+        transform: translateX(-5%);
     }
 
-    .circle.grow { 
-        transform: scale(1.5); /* Maintains growth effect */
+    /* Maintaining growth effect with leftward adjustment */
+    .circle.grow {
+        transform: scale(1.5) translateX(-5%);
     }
 }
 
