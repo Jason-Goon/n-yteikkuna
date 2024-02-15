@@ -1,0 +1,199 @@
+/* General Showcase Styles */
+.showcase {
+    background-color: var(--quaternary-color);
+    border: 1px solid var(--tertiary-color); /* Use variable for border color */
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Shared Section Styles */
+.introduction, .services, .portfolio, .testimonials, .contact {
+    background-color: var(--quaternary-color); /* Use the quaternary color as the background */
+    color: var(--primary-color); /* Text color contrasts with the background */
+    margin: 2rem auto; /* Center the section and add margin to the bottom */
+    padding: 2rem; /* Add padding inside the sections */
+    border-radius: 7px; /* Rounded corners for a softer look */
+    width: 80%; /* Control the width to make the content area narrower */
+    max-width: 600px; /* Maximum width to prevent sections from becoming too wide */
+    text-align: center; /* Center the text within each section */
+    box-shadow: 0 4px 6px  rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+}
+
+/* Ensure that the main content area is large enough to center these sections vertically */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* Adjust based on your content */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .introduction, .services, .portfolio, .testimonials, .contact {
+        width: 90%; /* Slightly wider on smaller screens for better use of space */
+        padding: 1rem; /* Adjust padding to better fit smaller screens */
+    }
+}
+
+
+/* Services Section */
+.service-item {
+    margin-bottom: 1rem;
+}
+
+.services .service-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Portfolio Section */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.portfolio .portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Testimonials Section */
+.testimonials .testimonial-item {
+    background-color: var(--quaternary-color); /* Already using a variable */
+    color: var(--primary-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Features Section for Minimal Page */
+.features ul {
+    list-style: none; /* Removes default list styling */
+    padding: 0;
+}
+
+.features li {
+    margin-bottom: 10px; /* Spacing between list items */
+}
+
+/* Interactive Circles */
+.interactive-circles {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust based on your design needs */
+    margin: auto;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--primary-color);/* Updated to use variable */
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: var(--quaternary-color);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+.circle.grow { 
+    transform: scale(2); 
+    opacity: 0.9; 
+}
+
+@media (max-width: 600px) {
+    .circle {
+        width: 20vw; /* Dynamic sizing for responsiveness */
+        height: 20vw;
+    }
+}
+
+/* Sizing for circles */
+.circle.large { width: 160px; height: 160px; top: 10%; left: 30%; }
+.circle.medium { width: 120px; height: 120px; top: 75%; left: 39%; }
+.circle.small { width: 90px; height: 90px; top: 5%; right: 48%; }
+.circle.xlarge { width: 200px; height: 200px; top: 50%; right: 35%; }
+
+/* Color Palettes */
+.color-palettes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--secondary-color); /* Updated to use variable */
+}
+
+.palette {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid var(--quaternary-color); /* Use variable for border */
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--quartenary-color);
+    color: var(--primary-color);
+}
+
+.form-group textarea {
+    resize: vertical; /* Allows the user to resize the textarea vertically */
+}
+
+button[type="submit"] {
+    color: var(--primary-color);
+    background-color: var(--quartenary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+.company-info {
+    margin-top: 2rem; /* Add some space between the form and company info */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .contact {
+        padding: 1rem;
+        padding-bottom: 2rem; /* Ensure adequate spacing on smaller devices */
+    }
+}
+input:focus, textarea:focus, select:focus {
+    outline: 2px solid var(--primary-color); /* Custom color for the outline */
+    /* Additional styles to improve focus state, like box-shadow */
+    box-shadow: 0 0 3px var(--primary-color);
+}

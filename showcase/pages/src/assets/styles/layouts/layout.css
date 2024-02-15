@@ -1,0 +1,22 @@
+header {
+    background-color: var(--secondary-color);
+    color: var(--primary-text-color);
+    padding: 1em;
+}
+
+main {
+    padding: 20px;
+    color: var(--text-color); /* Ensure main content text color follows the theme */
+    padding-bottom: 100px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
