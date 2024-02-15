@@ -128,14 +128,14 @@ button {
                 .then(response => response.json())
                 .then(data => {
                     if (data.choices && data.choices.length > 0) {
-                        displayMessage(`Bot: ${data.choices[0].message.content}`);
+                        displayMessage(`Smith: ${data.choices[0].message.content}`);
                     } else {
-                        displayMessage('Bot: Sorry, I did not understand that.');
+                        displayMessage('Smith: Sorry, I did not understand that.');
                     }
                 })
                 .catch(error => {
                     console.error('Error:', error);
-                    displayMessage('Bot: Oops! Something went wrong.');
+                    displayMessage('Smith: Oops! Something went wrong.');
                 });
                 messageInput.value = ''; // Clear the input after sending
             }
