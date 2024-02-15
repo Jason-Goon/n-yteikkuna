@@ -123,22 +123,22 @@ main {
     /* Adjusts for center alignment with a bit more vertical spacing */
     .circle.large { 
         top: 5vh; /* More spaced out */
-        left: 50%;
+        left: 40%;
         transform: translateX(-50%);
     }
     .circle.medium { 
         top: 30vh; /* Increases spacing */
-        left: 50%;
+        left: 40%;
         transform: translateX(-50%);
     }
     .circle.small { 
         top: 55vh; /* Further increases spacing */
-        left: 50%;
+        left: 40%;
         transform: translateX(-50%);
     }
     .circle.xlarge { 
         top: 80vh; /* Maximizes vertical spacing */
-        left: 50%;
+        left: 40%;
         transform: translateX(-50%);
         margin-bottom: 20px; /* Ensures bottom space */
     }
