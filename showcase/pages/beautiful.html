@@ -113,6 +113,11 @@ button {
         <p>Showcase Website © 2024</p>
     </footer>
   <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    const sendMessageButton = document.getElementById('sendMessageButton');
+    sendMessageButton.addEventListener('click', sendMessage);
+});
+
         function sendMessage() {
             const messageInput = document.getElementById('message');
             const chatbox = document.getElementById('chatbox');
