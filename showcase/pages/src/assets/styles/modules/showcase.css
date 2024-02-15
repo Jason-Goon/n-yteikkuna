@@ -139,14 +139,14 @@ main {
         height: 18vw; 
         max-width: 80px; 
         max-height: 80px;
-        transform: translateX(-50%);
+        transform: translateX(-50px);
     }
     .circle.small {
         width: 14vw; 
         height: 14vw; 
         max-width: 60px; 
         max-height: 60px;
-        transform: translateX(30%); /* Corrected for slight leftward placement */
+        transform: translateX(30px); /* Corrected for slight leftward placement */
     }
     .circle.xlarge {
         width: 26vw; 
@@ -158,7 +158,7 @@ main {
 
     /* Growth effect adjustments ensuring circles don't move off-screen */
     .circle.grow {
-        transform: scale(1.8) translateX(0); /* Scales up without horizontal shift */
+        transform: scale(1.8); /* Scales up without horizontal shift */
     }
 }
 
