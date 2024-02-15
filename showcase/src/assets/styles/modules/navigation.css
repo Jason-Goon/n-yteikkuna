@@ -1,0 +1,38 @@
+.navbar {
+    overflow: hidden;
+    background-color: var(--secondary-color);
+    text-align: center; /* Centralize nav items */
+    padding: 1em 0; /* Add padding for better spacing */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Aligns the list to the center of the navbar */
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: var(--primary-color); /* Use button text color variable */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 5px; /* Enforce same corner radius as .showcase */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover and active states */
+}
+
+.navbar a:hover, .navbar a:focus {
+    background-color: var(--quaternary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px); /* Lift the button slightly */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add a subtle shadow for depth */
+}
+
+.navbar a:active {
+    background-color: var(--quaternary-color); /* Slightly darker shade on click */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Smaller shadow to simulate pressing down */
+}

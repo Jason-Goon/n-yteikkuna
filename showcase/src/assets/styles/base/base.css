@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #186F65; /* Main background color, consider for header/footer */
+    --secondary-color: #B5CB99; /* Secondary elements background color, lighter elements */
+    --tertiary-color: #FCE09B; /* Accent elements background color, used for buttons/highlights */
+    --quaternary-color: #B2533E; /* Additional accent or border color */
+    --quinary-color: #FFF6F5; /* Newly added fifth color for additional accents */
+    --primary-text-color: #FFFFFF; /* Updated for better contrast against darker backgrounds */
+    --button-bg-color: #FCE09B; /* Button background color */
+    --button-text-color: #186F65; /* Button text color for contrast */
+    --button-hover-bg-color: #B5CB99; /* Button hover background color */
+    --button-hover-text-color: #FFFFFF; /* Updated for readability */
+    --body-bg-color: #186F65; /* Updated body background color for a cohesive theme */
+    --text-color: #FFFFFF; /* Updated general text color for better contrast */
+    --heading-padding: 0.5em 0;
+    --paragraph-margin: 0;
+    --paragraph-padding: 0.5em 0;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: var(--heading-padding);
+}
+
+p {
+    margin: var(--paragraph-margin);
+    padding: var(--paragraph-padding);
+}
