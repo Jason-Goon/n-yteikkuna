@@ -157,8 +157,17 @@ main {
     }
 
     /* Growth effect adjustments ensuring circles don't move off-screen */
-    .circle.grow {
-        transform: scale(1.8); /* Scales up without horizontal shift */
+     .circle.large.grow {
+        transform: scale(1.8) translateX(-20%);
+    }
+    .circle.medium.grow {
+        transform: scale(1.8) translateX(-80px);
+    }
+    .circle.small.grow {
+        transform: scale(1.8) translateX(100px);
+    }
+    .circle.xlarge.grow {
+        transform: scale(1.8) translateX(50px);
     }
 }
 
