@@ -126,7 +126,7 @@ main {
         max-height: 90px;
         margin: 10px 0; /* Ensure adequate spacing between circles */
         position: relative; /* Keep for slight horizontal adjustments */
-        left: 0; /* Reset any left positioning */
+        left: 20px; /* Reset any left positioning */
         transform: translateX(0%); /* Reset translate for consistent centering */
     }
 
