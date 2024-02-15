@@ -216,7 +216,10 @@ main {
     border: 1px solid var(--secondary-color);
     background-color: var(--quartenary-color);
     color: var(--primary-color);
+    box-sizing: border-box;
 }
+
+
 
 .form-group textarea {
     resize: vertical; /* Allows the user to resize the textarea vertically */
