@@ -145,7 +145,7 @@ main {
     }
 
     /* Apply a subtle uniform offset to all circles to slightly move them off-center */
-    .circle { transform: translateX(10px); }
+    .circle { transform: translateX(20px); }
 
     /* Adjust the scale for growth effect */
     .circle.grow { transform: scale(1.5) translateX(10px); }
