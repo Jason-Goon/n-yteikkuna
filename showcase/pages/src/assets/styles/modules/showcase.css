@@ -153,7 +153,7 @@ main {
         height: 26vw; 
         max-width: 120px; 
         max-height: 120px;
-        transform: translateX(30%); /* Adjusted for casual rightward placement */
+        transform: translateX(50px); /* Adjusted for casual rightward placement */
     }
 
     /* Growth effect adjustments ensuring circles don't move off-screen */
