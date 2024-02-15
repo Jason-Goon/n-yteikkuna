@@ -31,12 +31,33 @@ main {
 }
 
 /* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .introduction, .services, .portfolio, .testimonials, .contact {
-        width: 90%; /* Slightly wider on smaller screens for better use of space */
-        padding: 1rem; /* Adjust padding to better fit smaller screens */
+@media (max-width: 600px) {
+    .interactive-circles {
+        height: auto; /* Allows container height to adjust based on circle placement */
+        padding-bottom: 20px; /* Adds some space at the bottom */
     }
+    
+    .circle {
+        width: 30vw; /* Adjusts size for smaller screens */
+        height: 30vw;
+        position: relative; /* Switches positioning from absolute to relative */
+        margin: 10px auto; /* Adds margin for spacing and centers circles horizontally */
+        transform: scale(1); /* Resets any growth transformation */
+    }
+    
+    /* Adjusted positions for small screens - Example */
+    .circle.large, .circle.medium, .circle.small, .circle.xlarge {
+        left: 50%; /* Centers circles horizontally */
+        transform: translateX(-50%); /* Adjusts for center alignment */
+    }
+
+    /* Individual adjustments if needed */
+    .circle.large { top: 10vh; }
+    .circle.medium { top: 40vh; }
+    .circle.small { top: 70vh; }
+    .circle.xlarge { top: 100vh; margin-bottom: 20px; } /* Example placement */
 }
+
 
 
 /* Services Section */
