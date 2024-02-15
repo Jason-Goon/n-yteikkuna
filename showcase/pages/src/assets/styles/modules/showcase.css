@@ -111,51 +111,36 @@ main {
     .interactive-circles {
         display: flex;
         flex-direction: column;
-        align-items: flex-start; /* Aligns items to the start to allow for offset */
-        justify-content: space-evenly; /* Evenly distribute space vertically */
+        align-items: center; /* Center circles vertically */
         height: auto;
         padding: 20px;
-        width: 100%;
     }
     
-    /* Resets the circles to use specific sizes for mobile, with a slight right offset */
+    /* Base style for circles, adjusting size for mobile screens */
     .circle {
-        margin: 10px auto; /* Adjusts vertical spacing */
-        position: absolute; /* Keeps absolute positioning for specific placement */
-        left: 50%; /* Central alignment with adjustment */
-        transform: translateX(-50%); /* Adjusts back to center from left: 50% */
+        width: 20vw; /* Responsive size */
+        height: 20vw;
+        max-width: 100px; /* Limit size for very small devices */
+        max-height: 100px;
+        margin: 2vw auto; /* Adjust spacing */
+        position: relative; /* Adjust if necessary for individual positioning */
     }
 
-    .circle.large { 
-        width: 140px; /* Adjusted size for mobile */
-        height: 140px;
-        top: 10%;
-        transform: translateX(-45%); /* Slightly adjusts to the right */
-    }
-    .circle.medium { 
-        width: 110px; /* Adjusted size for mobile */
-        height: 110px;
-        top: 30%;
-        transform: translateX(-45%);
-    }
-    .circle.small { 
-        width: 80px; /* Adjusted size for mobile */
-        height: 80px;
-        top: 50%;
-        transform: translateX(-45%);
-    }
-    .circle.xlarge { 
-        width: 170px; /* Adjusted size for mobile */
-        height: 170px;
-        top: 70%;
-        transform: translateX(-45%);
+    /* Remove specific positioning to allow flexbox to manage layout */
+    .circle.large, .circle.medium, .circle.small, .circle.xlarge {
+        /* Common adjustments for mobile, if needed */
     }
 
-    .circle.grow {
-        transform: scale(1.5); /* Ensures visible growth effect without overlap */
+    .circle.grow { 
+        transform: scale(1.5); /* Adapted scale for growth effect on mobile */
     }
 }
 
+/* Individual adjustments for slight off-center alignment */
+.circle.large { margin-left: 5%; }
+.circle.medium { margin-left: 3%; }
+.circle.small { margin-left: 1%; }
+.circle.xlarge { margin-left: 4%; }
 
 
 
