@@ -131,28 +131,28 @@ main {
         height: 22vw; 
         max-width: 100px; 
         max-height: 100px;
-        transform: translateX(-15%); /* Adjusts position slightly to the left */
+        transform: translateX(-70%); /* Adjusts position slightly to the left */
     }
     .circle.medium {
         width: 18vw; 
         height: 18vw; 
         max-width: 80px; 
         max-height: 80px;
-        transform: translateX(-15%);
+        transform: translateX(-50%);
     }
     .circle.small {
         width: 14vw; 
         height: 14vw; 
         max-width: 60px; 
         max-height: 60px;
-        transform: translateX(30%);
+        transform: translateX(80%);
     }
     .circle.xlarge {
         width: 26vw; 
         height: 26vw; 
         max-width: 120px; 
         max-height: 120px;
-        transform: translateX(15%);
+        transform: translateX(70%);
     }
 
     /* Maintaining growth effect with leftward adjustment */
