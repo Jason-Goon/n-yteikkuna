@@ -150,13 +150,6 @@ main {
 
 
 
-/* Individual adjustments for slight off-center alignment */
-.circle.large { margin-left: 5%; }
-.circle.medium { margin-left: 3%; }
-.circle.small { margin-left: 1%; }
-.circle.xlarge { margin-left: 4%; }
-
-
 
 
 /* Sizing for circles */
