@@ -157,7 +157,7 @@ main {
 
     /* Maintaining growth effect with leftward adjustment */
     .circle.grow {
-        transform: scale(1.5) translateX(-5%);
+        transform: scale(1.8) 
     }
 }
 
