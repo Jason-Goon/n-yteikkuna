@@ -139,7 +139,7 @@ main {
         height: 18vw; 
         max-width: 80px; 
         max-height: 80px;
-        transform: translateX(-50px);
+        transform: translateX(-66px);
     }
     .circle.small {
         width: 14vw; 
