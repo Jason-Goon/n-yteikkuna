@@ -154,10 +154,10 @@ main {
         transform: translateX(100px); /* Corrected for slight leftward placement */
     }
     .circle.xlarge {
-        width: 24vw; 
-        height: 24vw; 
-        max-width: 110px; 
-        max-height: 110px;
+        width: 22vw; 
+        height: 22vw; 
+        max-width: 100px; 
+        max-height: 100px;
         transform: translateX(50px); /* Adjusted for casual rightward placement */
     }
 
