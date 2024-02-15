@@ -111,30 +111,46 @@ main {
     .interactive-circles {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Center circles vertically */
+        align-items: center; /* Ensure circles are aligned in the center */
+        justify-content: space-around; /* Distribute circles evenly */
         height: auto;
-        padding: 20px;
+        padding: 20px 0; /* Add padding at the top and bottom */
+        width: 100%;
     }
-    
-    /* Base style for circles, adjusting size for mobile screens */
+
+    /* Base responsive settings for circles */
     .circle {
-        width: 20vw; /* Responsive size */
+        width: 20vw; /* Dynamic sizing */
         height: 20vw;
-        max-width: 100px; /* Limit size for very small devices */
-        max-height: 100px;
-        margin: 2vw auto; /* Adjust spacing */
-        position: relative; /* Adjust if necessary for individual positioning */
+        max-width: 90px; /* Limit size for small devices */
+        max-height: 90px;
+        margin: 10px 0; /* Ensure adequate spacing between circles */
+        position: relative; /* Keep for slight horizontal adjustments */
+        left: 0; /* Reset any left positioning */
+        transform: translateX(0%); /* Reset translate for consistent centering */
     }
 
-    /* Remove specific positioning to allow flexbox to manage layout */
-    .circle.large, .circle.medium, .circle.small, .circle.xlarge {
-        /* Common adjustments for mobile, if needed */
+    /* Adjust the size of each circle explicitly */
+    .circle.large { 
+        width: 22vw; max-width: 100px; height: 22vw; max-height: 100px; 
+    }
+    .circle.medium { 
+        width: 18vw; max-width: 80px; height: 18vw; max-height: 80px; 
+    }
+    .circle.small { 
+        width: 14vw; max-width: 60px; height: 14vw; max-height: 60px; 
+    }
+    .circle.xlarge { 
+        width: 26vw; max-width: 120px; height: 26vw; max-height: 120px; 
     }
 
-    .circle.grow { 
-        transform: scale(1.5); /* Adapted scale for growth effect on mobile */
-    }
+    /* Apply a subtle uniform offset to all circles to slightly move them off-center */
+    .circle { transform: translateX(10px); }
+
+    /* Adjust the scale for growth effect */
+    .circle.grow { transform: scale(1.5) translateX(10px); }
 }
+
 
 /* Individual adjustments for slight off-center alignment */
 .circle.large { margin-left: 5%; }
