@@ -178,62 +178,23 @@ main {
 
 
 
-@media (max-width: 1367px) {
+@media (min-width: 768px) and (max-width: 1366px) {
     .interactive-circles {
-        /* Adjust the layout for medium screens, similar to mobile but with differences */
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust based on design needs */
-        justify-items: center;
-        align-items: center;
-        gap: 20px; /* Space between circles */
-        padding: 20px; /* Adjust padding for better spacing */
-        height: auto;
-        width: 100%;
+        /* Adjust layout if necessary */
     }
-
+    
     .circle {
-        /* Reset positioning to default for medium screens */
-        margin: 10px; /* Adjust margin for optimal spacing */
-        position: relative; /* Reset position */
-        width: 18vw; /* Scale sizes down for medium screens */
-        height: 18vw;
-        max-width: 150px; /* Cap sizes to prevent overly large circles */
-        max-height: 150px;
-        transition: transform 0.3s ease; /* Ensure smooth transitions */
+        width: 12vw; /* Adjust based on preference, ensuring circles aren't too big */
+        height: 12vw; /* Keep aspect ratio consistent */
+        max-width: 120px; /* Cap the size to prevent circles from being too large */
+        max-height: 120px;
     }
-
-    /* Specific size adjustments for different circle sizes */
-    .circle.large {
-        width: 20vw;
-        height: 20vw;
-        max-width: 180px;
-        max-height: 180px;
-    }
-    .circle.medium {
-        width: 17vw;
-        height: 17vw;
-        max-width: 160px;
-        max-height: 160px;
-    }
-    .circle.small {
-        width: 15vw;
-        height: 15vw;
-        max-width: 140px;
-        max-height: 140px;
-    }
-    .circle.xlarge {
-        width: 22vw;
-        height: 22vw;
-        max-width: 200px;
-        max-height: 200px;
-    }
-
-    /* Adjust grow effect for medium screens to maintain visual balance */
+    
+    /* Optionally adjust the grow effect as well */
     .circle.grow {
-        transform: scale(1.5); /* Adjust scaling effect */
+        transform: scale(1.3); /* Scale down the grow effect for medium screens */
     }
 }
-
 
 
 
