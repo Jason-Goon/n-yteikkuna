@@ -223,9 +223,14 @@ main {
 }
 
 /* Ensure the paragraph is full width to force it to the next line */
-.color-palettes p {
-    width: 100%;
-    text-align: center; /* Center the text if desired */
+.color-palettes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
+    box-shadow: 0 1px 1px -1px #000; /* Adjust color and spread as needed */
 }
 
 .form-group {
