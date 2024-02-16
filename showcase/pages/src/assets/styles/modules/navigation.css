@@ -45,17 +45,19 @@
 
     .navbar li {
         margin-right: 20px; /* Increase space between buttons sideways */
-        margin-bottom: 10px; /* Increase space from the top line if wrapped */
+        margin-bottom: 20px; /* Increase space for wrapped items */
     }
     
     .navbar a, .navbar a:hover, .navbar a:focus {
-        background-color: var(--quaternary-color); /* Default to hover color */
+        background-color: var(--quaternary-color); /* Ensure hover color is default */
         transform: none; /* Remove transform effect */
-        box-shadow: none; /* Remove shadow effect for a flat design */
+        box-shadow: none; /* Remove shadow for a flat design */
     }
     
     .navbar a:active {
-        background-color: darken(var(--quaternary-color), 10%); /* Darken on active for visual feedback */
-        box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Optionally, re-add shadow for depth */
+        /* Directly darken the background color for visual feedback */
+        background-color: #e57f20; /* Example darker shade, replace with actual desired color */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
 }
+
