@@ -222,6 +222,10 @@ main {
     border: 2px solid var(--quaternary-color); /* Assuming this variable is defined elsewhere */
 }
 
+.color-palettes p {
+    width: 100%;
+    text-align: center; /* Center the text if desired */
+}
 
 .form-group {
     margin-bottom: 1rem;
