@@ -38,26 +38,31 @@
 }
 
 @media (hover: none) and (pointer: coarse) {
-    
     .navbar ul {
-        /* Adjust padding or margin if needed for overall alignment */
+        display: flex; /* Confirming flex display */
+        flex-wrap: wrap; /* Ensure items can wrap */
+        justify-content: center; /* Keep items centered */
+        gap: 20px 10px; /* Utilize gap for consistent spacing, if supported */
     }
 
     .navbar li {
         margin-right: 20px; /* Increase space between buttons sideways */
         margin-bottom: 20px; /* Increase space for wrapped items */
     }
+
+    .navbar li:not(:first-child) {
+        margin-top: 20px; /* Adjust as necessary for your design */
+    }
     
     .navbar a, .navbar a:hover, .navbar a:focus {
-        background-color: var(--quaternary-color); /* Ensure hover color is default */
-        transform: none; /* Remove transform effect */
-        box-shadow: none; /* Remove shadow for a flat design */
+        background-color: var(--quaternary-color); /* Default hover color */
+        transform: none; /* Remove transform effects */
+        box-shadow: none; /* Flat design, no shadow */
+        display: block; /* Ensure links take up the full container */
     }
     
     .navbar a:active {
-        /* Directly darken the background color for visual feedback */
-        background-color: #e57f20; /* Example darker shade, replace with actual desired color */
-        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        background-color: #e57f20; /* Darker color for active state */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Shadow for depth */
     }
-}
 
