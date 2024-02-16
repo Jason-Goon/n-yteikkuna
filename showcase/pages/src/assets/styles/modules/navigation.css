@@ -38,11 +38,20 @@
 }
 
 @media (hover: none) and (pointer: coarse) {
+    
+    .navbar ul {
+        /* Adjust padding or margin if needed for overall alignment */
+    }
+
+    .navbar li {
+        margin-right: 20px; /* Increase space between buttons sideways */
+        margin-bottom: 10px; /* Increase space from the top line if wrapped */
+    }
+    
     .navbar a, .navbar a:hover, .navbar a:focus {
         background-color: var(--quaternary-color); /* Default to hover color */
         transform: none; /* Remove transform effect */
         box-shadow: none; /* Remove shadow effect for a flat design */
-        padding: 15px 20px;
     }
     
     .navbar a:active {
