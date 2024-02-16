@@ -192,7 +192,7 @@ main {
     
     /* Optionally adjust the grow effect as well */
     .circle.grow {
-        transform: scale(1.3); /* Scale down the grow effect for medium screens */
+        transform: scale(1.8); /* Scale down the grow effect for medium screens */
     }
 }
 
