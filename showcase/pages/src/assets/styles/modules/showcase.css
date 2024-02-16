@@ -189,10 +189,11 @@ main {
 /* Color Palettes */
 .color-palettes {
     display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
     justify-content: center;
     gap: 10px;
     padding: 10px;
-    background-color: var(--secondary-color); /* Updated to use variable */
+    background-color: var(--secondary-color); /* Assuming this variable is defined elsewhere */
 }
 
 .palette {
@@ -200,7 +201,13 @@ main {
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
-    border: 2px solid var(--quaternary-color); /* Use variable for border */
+    border: 2px solid var(--quaternary-color); /* Assuming this variable is defined elsewhere */
+}
+
+/* Ensure the paragraph is full width to force it to the next line */
+.color-palettes p {
+    width: 100%;
+    text-align: center; /* Center the text if desired */
 }
 
 .form-group {
