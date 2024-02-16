@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat GPT</title>
-    <link rel="stylesheet" href="/src/assets/styles/base/base.css">
-    <link rel="stylesheet" href="/src/assets/styles/layouts/layout.css">
-    <link rel="stylesheet" href="/src/assets/styles/modules/navigation.css">
-    <link rel="stylesheet" href="/src/assets/styles/modules/showcase.css">
+    <link rel="stylesheet" href="../src/assets/styles/base/base.css">
+    <link rel="stylesheet" href="../src/assets/styles/layouts/layout.css">
+    <link rel="stylesheet" href="../src/assets/styles/modules/navigation.css">
+    <link rel="stylesheet" href="../src/assets/styles/modules/showcase.css">
     <style>
         body {
             margin: 0;
@@ -71,7 +71,11 @@ button {
     margin: 0 auto; /* Center the button */
     border-radius: 4px;
 }
-    
+        @media (max-width: 768px) {
+            #chatbox, input[type="text"], button {
+                width: 95%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -86,71 +90,65 @@ button {
         </nav>
     </header>
     <div class="color-palettes">
-        <div class="palette" data-palette="palette1" style="background-color: #76453B;"></div>
-        <div class="palette" data-palette="palette2" style="background-color: #324371;"></div>
-        <div class="palette" data-palette="palette3" style="background-color: #113946;"></div>
+        <div class="palette" data-palette="palette1" style="background-color: #186F65;"></div>
+        <div class="palette" data-palette="palette2" style="background-color: #1D2B53;"></div>
+        <div class="palette" data-palette="palette3" style="background-color: #B06161;"></div>
     </div>
     <main class="container">
         <div id="chatbox"></div>
         <input type="text" id="message" placeholder="Kysy mitä vain millä tahansa kielellä..." aria-label="Type your message">
-        <button type="button" id="sendMessageButton">Lähetä</button>
-
+         <button id="sendMessageButton">Lähetä</button>
     </main>
     <footer>
         <p>Showcase Website © 2024</p>
     </footer>
   <script>
-      <script>
-  <script>
-  // This code assumes that your DOM elements like `sendMessageButton` are already available
-  document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener('DOMContentLoaded', function() {
     const sendMessageButton = document.getElementById('sendMessageButton');
-
-    // Only use click event for simplicity and broad compatibility
-    sendMessageButton.addEventListener('click', function(event) {
-      event.preventDefault(); // Prevent any default action to ensure it works as intended
-      sendMessage();
-    });
-
-    function sendMessage() {
-      const messageInput = document.getElementById('message');
-      const chatbox = document.getElementById('chatbox');
-      const message = messageInput.value.trim();
-
-      if (message) {
-        displayMessage(`You: ${message}`);
-        // Make sure your API call is correctly set up
-        fetch('https://hello-world-shrill-night-d9f1.gentoogoon.workers.dev/', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ message: message })
-        })
-        .then(response => response.json())
-        .then(data => {
-          // Assuming your API response structure, adjust as needed
-          displayMessage(`Smith: ${data.reply || "Sorry, I did not understand that."}`);
-        })
-        .catch(error => {
-          console.error('Error:', error);
-          displayMessage('Smith: Oops! Something went wrong.');
-        });
-
-        messageInput.value = ''; // Clear the input field
-      }
-    }
-
-    function displayMessage(message) {
-      const messageElement = document.createElement('p');
-      messageElement.textContent = message;
-      chatbox.appendChild(messageElement);
-      chatbox.scrollTop = chatbox.scrollHeight; // Auto-scroll to the newest message
-    }
-  });
-</script>
+    sendMessageButton.addEventListener('click', sendMessage);
+});
+      sendMessageButton.addEventListener('touchend', function(event) {
+    event.preventDefault(); // Prevent the default touch behavior
+    sendMessage();
+});
 
 
+        function sendMessage() {
+            const messageInput = document.getElementById('message');
+            const chatbox = document.getElementById('chatbox');
+            const message = messageInput.value.trim();
+            if (message) {
+                displayMessage(`You: ${message}`);
+                // Replace 'https://api.example.com/' with your actual chatbot API endpoint
+                fetch('https://hello-world-shrill-night-d9f1.gentoogoon.workers.dev/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: message })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.choices && data.choices.length > 0) {
+                        displayMessage(`Smith: ${data.choices[0].message.content}`);
+                    } else {
+                        displayMessage('Smith: Sorry, I did not understand that.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    displayMessage('Smith: Oops! Something went wrong.');
+                });
+                messageInput.value = ''; // Clear the input after sending
+            }
+        }
+
+        function displayMessage(message) {
+            const messageElement = document.createElement('p');
+            messageElement.textContent = message;
+            chatbox.appendChild(messageElement);
+            chatbox.scrollTop = chatbox.scrollHeight; // Scroll to the bottom
+        }
     </script>
     <script src="../src/scripts/palette.js"></script>
-    <script src="/src/scripts/palette.js"></script>
+    <script src="../src/scripts/palette.js"></script>
 </body>
 </html>
