@@ -36,3 +36,16 @@
     background-color: var(--quaternary-color); /* Slightly darker shade on click */
     box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Smaller shadow to simulate pressing down */
 }
+
+@media (hover: none) and (pointer: coarse) {
+    .navbar a, .navbar a:hover, .navbar a:focus {
+        background-color: var(--quaternary-color); /* Default to hover color */
+        transform: none; /* Remove transform effect */
+        box-shadow: none; /* Remove shadow effect for a flat design */
+    }
+    
+    .navbar a:active {
+        background-color: darken(var(--quaternary-color), 10%); /* Darken on active for visual feedback */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Optionally, re-add shadow for depth */
+    }
+}
