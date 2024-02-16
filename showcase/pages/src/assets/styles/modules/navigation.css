@@ -47,7 +47,6 @@
 
     .navbar li {
         margin-right: 20px; /* Increase space between buttons sideways */
-        margin-bottom: 20px; /* Increase space for wrapped items */
     }
 
     .navbar li:not(:first-child) {
