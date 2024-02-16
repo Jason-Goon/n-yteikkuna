@@ -104,13 +104,14 @@ button {
     </footer>
   <script>
       <script>
+  <script>
+  // This code assumes that your DOM elements like `sendMessageButton` are already available
   document.addEventListener('DOMContentLoaded', function() {
-    // Correctly reference the sendMessageButton inside the DOMContentLoaded event
     const sendMessageButton = document.getElementById('sendMessageButton');
 
-    // Using 'click' event listener that works both for mouse and touch interactions efficiently
+    // Only use click event for simplicity and broad compatibility
     sendMessageButton.addEventListener('click', function(event) {
-      event.preventDefault(); // Prevent the default action to ensure compatibility
+      event.preventDefault(); // Prevent any default action to ensure it works as intended
       sendMessage();
     });
 
@@ -118,9 +119,10 @@ button {
       const messageInput = document.getElementById('message');
       const chatbox = document.getElementById('chatbox');
       const message = messageInput.value.trim();
+
       if (message) {
         displayMessage(`You: ${message}`);
-        // API call and response handling remains the same
+        // Make sure your API call is correctly set up
         fetch('https://hello-world-shrill-night-d9f1.gentoogoon.workers.dev/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -128,18 +130,15 @@ button {
         })
         .then(response => response.json())
         .then(data => {
-          // Process API response
-          if (data.choices && data.choices.length > 0) {
-            displayMessage(`Smith: ${data.choices[0].message.content}`);
-          } else {
-            displayMessage('Smith: Sorry, I did not understand that.');
-          }
+          // Assuming your API response structure, adjust as needed
+          displayMessage(`Smith: ${data.reply || "Sorry, I did not understand that."}`);
         })
         .catch(error => {
           console.error('Error:', error);
           displayMessage('Smith: Oops! Something went wrong.');
         });
-        messageInput.value = ''; // Clear the input after sending
+
+        messageInput.value = ''; // Clear the input field
       }
     }
 
@@ -147,10 +146,11 @@ button {
       const messageElement = document.createElement('p');
       messageElement.textContent = message;
       chatbox.appendChild(messageElement);
-      chatbox.scrollTop = chatbox.scrollHeight; // Scroll to the bottom
+      chatbox.scrollTop = chatbox.scrollHeight; // Auto-scroll to the newest message
     }
   });
 </script>
+
 
     </script>
     <script src="../src/scripts/palette.js"></script>
