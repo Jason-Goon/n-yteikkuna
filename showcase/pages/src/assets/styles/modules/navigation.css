@@ -46,7 +46,7 @@
     }
 
     .navbar li {
-        margin-right: 20px; /* Increase space between buttons sideways */
+
     }
 
     .navbar li:not(:first-child) {
