@@ -2,12 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
     function applyPalette(paletteName) {
         const paletteColors = {
             // Define your palettes here
-            palette1: ['#186F65', '#B5CB99', '#FCE09B', '#3D0C11', '#3B2533E'],
-            palette2: ['#1D2B53', '#7E2553', '#FF004D', '#F6D776', '#FAEF5D'],
-            palette3: ['#FF8080', '#FFCF96', '#F6FDC3', '#CDFADB', '#0D9276'],
-            // Default palette
-            defaultPalette:  ['#1D2B53', '#7E2553', '#FF004D', '#F6D776', '#FAEF5D']
+            palette1: ['#76453B', '#B19470', '#43766C', '#F8FAE5', '#F1E4C3'],
+            palette2: ['#324371', '#9b3b6d', '#f53d75', '#faf2d8', '#f6ef94'],
+            palette3: ['#113946', '#BCA37F', '#EAD7BB', '#FFF2D8'],
+            defaultPalette: ['#113946', '#BCA37F', '#EAD7BB', '#FFF2D8']// Example default colors
         }[paletteName || 'defaultPalette']; // Use 'defaultPalette' if no paletteName is provided
+ // Use 'defaultPalette' if no paletteName is provided
 
         if (paletteColors) {
             document.documentElement.style.setProperty('--primary-color', paletteColors[0]);
