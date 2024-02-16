@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
             palette2: ['#1D2B53', '#7E2553', '#FF004D', '#F6D776', '#FAEF5D'],
             palette3: ['#FF8080', '#FFCF96', '#F6FDC3', '#CDFADB', '#0D9276'],
             // Default palette
-            defaultPalette:  ['#186F65', '#B5CB99', '#FCE09B', '#B2533E', '#3D0C11']// Example default colors
+            defaultPalette:  ['#1D2B53', '#7E2553', '#FF004D', '#F6D776', '#FAEF5D']
         }[paletteName || 'defaultPalette']; // Use 'defaultPalette' if no paletteName is provided
 
         if (paletteColors) {
