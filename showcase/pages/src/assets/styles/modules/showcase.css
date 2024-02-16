@@ -178,7 +178,7 @@ main {
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1367px) {
     .interactive-circles {
         /* Adjust the layout for medium screens, similar to mobile but with differences */
         display: grid;
