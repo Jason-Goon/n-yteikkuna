@@ -42,6 +42,7 @@
         background-color: var(--quaternary-color); /* Default to hover color */
         transform: none; /* Remove transform effect */
         box-shadow: none; /* Remove shadow effect for a flat design */
+        padding: 15px 20px;
     }
     
     .navbar a:active {
