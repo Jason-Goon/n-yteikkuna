@@ -39,10 +39,10 @@
 
 @media (hover: none) and (pointer: coarse) {
     .navbar ul {
-        display: flex; /* Confirming flex display */
-        flex-wrap: wrap; /* Ensure items can wrap */
-        justify-content: center; /* Keep items centered */
-        gap: 20px 10px; /* Utilize gap for consistent spacing, if supported */
+        display: flex; /* Confirm flex display */
+        flex-wrap: wrap; /* Enable wrapping */
+        justify-content: center; /* Center items */
+        gap: 20px 10px; /* Consistent spacing using gap */
     }
 
     .navbar li {
@@ -50,18 +50,19 @@
     }
 
     .navbar li:not(:first-child) {
-        margin-top: 20px; /* Adjust as necessary for your design */
+        
     }
     
+   
     .navbar a, .navbar a:hover, .navbar a:focus {
-        background-color: var(--quaternary-color); /* Default hover color */
+        background-color: var(--quaternary-color); /* Default to hover color */
         transform: none; /* Remove transform effects */
-        box-shadow: none; /* Flat design, no shadow */
-        display: block; /* Ensure links take up the full container */
+        box-shadow: none; /* No shadow for a flat design */
+        display: block; /* Ensure full container utilization */
     }
     
     .navbar a:active {
-        background-color: #e57f20; /* Darker color for active state */
-        box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Shadow for depth */
+        background-color: #e57f20; /* Darker shade for active state */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Depth shadow */
     }
-
+}
