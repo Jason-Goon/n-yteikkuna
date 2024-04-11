@@ -1,4 +1,4 @@
-**# Chat GPT and Interactive Elements
+## Chat GPT and Interactive Elements
 
 This project showcases the use of Chat GPT and interactive web elements using pure web technologies such as HTML, CSS, and JavaScript. It provides a simple chat interface along with dynamic interactive elements to engage users.
 
