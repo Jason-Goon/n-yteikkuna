@@ -16,7 +16,7 @@ This project showcases the use of Chat GPT and interactive web elements using pu
 - CSS
 - JavaScript
 
-https://n-yteikkuna.pages.dev/
+To view the interactive GPT website, you can visit the Cloudflare Pages deployment https://n-yteikkuna.pages.dev/
 
 
 # Chat GPT ja Vuorovaikutteiset Elementit
@@ -37,4 +37,4 @@ Tämä projekti esittelee Chat GPT:n käyttöä ja vuorovaikutteisia web-element
 - CSS
 - JavaScript
 
-https://n-yteikkuna.pages.dev/
+Nähdäksesi GPT-verkkosivuston, voit vierailla Cloudflare Pages -julkaisussa osoitteessa https://n-yteikkuna.pages.dev/
