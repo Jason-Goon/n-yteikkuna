@@ -2,7 +2,7 @@
 
 This project showcases the use of Chat GPT and interactive web elements using pure web technologies such as HTML, CSS, and JavaScript. It provides a simple chat interface along with dynamic interactive elements to engage users.
 
-![Chat GPT](../src/assets/images/screenshot3.png)
+![Chat GPT](showcase/src/assets/images/screenshot3.png)
 
 ## Features
 
@@ -23,7 +23,7 @@ To view the interactive GPT website, you can visit the Cloudflare Pages deployme
 
 Tämä projekti esittelee Chat GPT:n käyttöä ja vuorovaikutteisia web-elementtejä käyttäen puhtaita web-teknologioita kuten HTML, CSS ja JavaScript. Se tarjoaa yksinkertaisen chat-käyttöliittymän sekä dynaamisia vuorovaikutteisia elementtejä käyttäjän sitouttamiseksi.
 
-![Chat GPT](/public/assets/images/screenshot4.png)
+![Chat GPT](showcase/src/assets/images/screenshot44.png)
 
 ## Ominaisuudet
 
