@@ -21,6 +21,9 @@ This project showcases the use of Chat GPT and interactive web elements using pu
 - This project is licensed under the Zero-Clause BSD License - see the [LICENSE](LICENSE) file for details.
 
 
+
+
+
 To view the interactive GPT website, you can visit the Cloudflare Pages deployment https://n-yteikkuna.pages.dev/
 
 
@@ -45,6 +48,8 @@ Tämä projekti esittelee Chat GPT:n käyttöä ja vuorovaikutteisia web-element
 ## Lisenssi
 
 - Tämä projekti on lisensoitu Zero-Clause BSD -lisenssillä. Lisätietoja löytyy [LICENSE](LICENSE) tiedostosta.
+
+  
 
 
 Nähdäksesi GPT-verkkosivuston, voit vierailla Cloudflare Pages -julkaisussa osoitteessa https://n-yteikkuna.pages.dev/
