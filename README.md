@@ -9,6 +9,7 @@ This project showcases the use of Chat GPT and interactive web elements using pu
 - **Chat GPT**: Allows users to interact with artificial intelligence in real-time.
 - **Interactive Elements**: Includes dynamic elements like color palettes and moving circles that react to user actions.
 - **Custom Styling**: Utilizes CSS variables and media rules for a responsive and visually appealing design.
+- To view the interactive GPT website, you can visit the Cloudflare Pages deployment https://n-yteikkuna.pages.dev/
 
 ## Technologies
 
@@ -22,11 +23,6 @@ This project showcases the use of Chat GPT and interactive web elements using pu
 
 
 
-
-
-To view the interactive GPT website, you can visit the Cloudflare Pages deployment https://n-yteikkuna.pages.dev/
-
-
 # Chat GPT ja Vuorovaikutteiset Elementit
 
 Tämä projekti esittelee Chat GPT:n käyttöä ja vuorovaikutteisia web-elementtejä käyttäen puhtaita web-teknologioita kuten HTML, CSS ja JavaScript. Se tarjoaa yksinkertaisen chat-käyttöliittymän sekä dynaamisia vuorovaikutteisia elementtejä käyttäjän sitouttamiseksi.
@@ -38,6 +34,7 @@ Tämä projekti esittelee Chat GPT:n käyttöä ja vuorovaikutteisia web-element
 - **Chat GPT**: Käyttäjät voivat kommunikoida tekoälyn kanssa reaaliajassa.
 - **Vuorovaikutteiset Elementit**: Sisältää dynaamisia elementtejä, kuten väripaletit ja liikkuvat ympyrät, jotka reagoivat käyttäjän toimintaan.
 - **Mukautettu Tyylittely**: Hyödyntää CSS-muuttujia ja mediasääntöjä responsiivisen ja visuaalisesti miellyttävän ulkoasun aikaansaamiseksi.
+- Nähdäksesi GPT-verkkosivuston, voit vierailla Cloudflare Pages -julkaisussa osoitteessa https://n-yteikkuna.pages.dev/
 
 ## Teknologiat
 
@@ -51,5 +48,3 @@ Tämä projekti esittelee Chat GPT:n käyttöä ja vuorovaikutteisia web-element
 
   
 
-
-Nähdäksesi GPT-verkkosivuston, voit vierailla Cloudflare Pages -julkaisussa osoitteessa https://n-yteikkuna.pages.dev/
